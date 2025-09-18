@@ -1,5 +1,6 @@
-import react , {createCOntext} from 'react';
-import all_products from '../Components/Assets/Frontend_Assets/all_product';
+import React, { createContext, useState, useContext } from "react";
+
+import all_products from '../Components/Assets/Frontend_Assets/all_product.js';
 export const ShopContext = createContext(null);
 
 const ShopContextProvider = (props) => {
