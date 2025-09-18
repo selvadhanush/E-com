@@ -17,7 +17,15 @@ function App() {
     <BrowserRouter>
       <Navbar/>
       <Routes>
-
+        <Route path="/" element={<Shop/>} />
+        <Route path="/mens" element={<ShopCategory banner={MenBanner} category="men"/>} />
+        <Route path="/womens" element={<ShopCategory banner={WomenBanner} category="women"/>} />
+        <Route path="/kids" element={<ShopCategory banner={KidBanner} category="kid"/>} />
+        <Route path="/Product" element={<Product/>}>
+          <Route path=":ProductId" element={<Product/>}/><Route/>
+         </Route>
+        <Route path='/Cart'element={<Cart/>}/>
+        <Route path='/login'element={<LoginSignup/>}/>
       </Routes>
       <Footer/>
     </BrowserRouter>
